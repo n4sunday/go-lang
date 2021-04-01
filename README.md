@@ -5,8 +5,8 @@
 - [Getstart](#getstart)
 - [Intro Go](#intro_go)
 
-
-<a name="getstart"></a>### Getstart
+<a name="getstart"></a>
+###Getstart
 
 #### Hello Word
 
@@ -50,7 +50,9 @@ Downloads the raw source code of someone else's package
 
 https://golang.org/pkg/
 
-<a name="intro_go"></a>### Intro Go
+<a name="intro_go"></a>
+
+### Intro Go
 
 #### Typed
 
@@ -97,4 +99,5 @@ true
 0
 apple
 ```
+
 The **:=** syntax is shorthand for declaring and initializing a variable
