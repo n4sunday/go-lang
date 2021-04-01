@@ -3,7 +3,7 @@
 ### Contents
 
 - [Getstart](#Getstart)
-- [Intro Go](#IntroGo)
+- [Intro Go](#Intro_Go)
 
 ### Getstart
 
