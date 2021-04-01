@@ -2,10 +2,11 @@
 
 ### Contents
 
-- [Getstart](#Getstart)
-- [Intro Go](#Intro_Go)
+- [Getstart](#getstart)
+- [Intro Go](#intro_go)
 
-### Getstart
+
+<a name="getstart"></a>### Getstart
 
 #### Hello Word
 
@@ -49,7 +50,7 @@ Downloads the raw source code of someone else's package
 
 https://golang.org/pkg/
 
-### Intro Go
+<a name="intro_go"></a>### Intro Go
 
 #### Typed
 
