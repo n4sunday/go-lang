@@ -100,3 +100,114 @@ apple
 ```
 
 The **:=** syntax is shorthand for declaring and initializing a variable
+
+#### Basic Functions
+
+```go
+
+func simpleFunc() string {
+	return "Five of Diamond"
+}
+```
+
+#### Basic data structure
+
+##### Array
+
+- Fixed length list of thing
+
+```go
+func main() {
+	a := []string{"C", "Java", "JavaScript", "Go"}
+	fmt.Println(a)
+}
+```
+
+##### Slices
+
+- An array that can grow or shrink
+- Every element in a slice must be of same type
+
+```go
+func main() {
+	a := []string{"C", "Java", "JavaScript", "Go", simpleFunc()}
+	a = append(a, "Python")
+	fmt.Println(a)
+}
+
+func simpleFunc() string {
+	return "Dart"
+}
+```
+
+##### Loop
+
+Three-component loop
+
+```go
+func main() {
+	sum := 0
+	for i := 1; i < 5; i++ {
+		sum += i
+	}
+	fmt.Println(sum) // 10
+}
+```
+
+While loop
+
+```go
+func main() {
+	n := 1
+	for n < 5 {
+		n *= 2
+	}
+	fmt.Println(n)
+}
+```
+
+Infinite loop
+
+```go
+func main() {
+	sum := 0
+	for {
+		sum++ // repeated forever
+	}
+	fmt.Println(sum) // never reached
+}
+```
+
+For-each range loop
+
+```go
+func main() {
+	a := []string{"C", "Java", "JavaScript", "Go"}
+
+	for index, item := range a {
+		fmt.Println(index, item)
+	}
+}
+```
+
+```zsh
+0 C
+1 Java
+2 JavaScript
+3 Go
+```
+
+Exit a loop
+
+```go
+func main() {
+	sum := 0
+	for i := 1; i < 5; i++ {
+		if i%2 != 0 { // skip odd numbers
+			continue
+		}
+		sum += i
+	}
+	fmt.Println(sum) // 6 (2+4)
+}
+```
