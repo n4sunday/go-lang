@@ -5,8 +5,7 @@
 - [Getstart](#getstart)
 - [Intro Go](#intro_go)
 
-<a name="getstart"></a>
-###Getstart
+### <a name="getstart"></a>Getstart
 
 #### Hello Word
 
@@ -52,7 +51,7 @@ https://golang.org/pkg/
 
 <a name="intro_go"></a>
 
-### Intro Go
+### <a name="intro_go"></a>Intro Go
 
 #### Typed
 
