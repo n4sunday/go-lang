@@ -1,11 +1,7 @@
 package main
 
-import "fmt"
-
 func main() {
-	a := []string{"C", "Java", "JavaScript", "Go"}
-
-	for i, item := range a {
-		fmt.Println(i, item)
-	}
+	a := deck{"C", "Java", "JavaScript", "Go"}
+	a = append(a, "Dart")
+	a.print()
 }

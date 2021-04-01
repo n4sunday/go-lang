@@ -5,6 +5,8 @@
 - [Getstart](#getstart)
 - [Intro Go](#intro_go)
 
+---
+
 ### <a name="getstart"></a>Getstart
 
 #### Hello Word
@@ -49,6 +51,8 @@ Downloads the raw source code of someone else's package
 
 https://golang.org/pkg/
 
+---
+
 <a name="intro_go"></a>
 
 ### <a name="intro_go"></a>Intro Go
@@ -56,19 +60,21 @@ https://golang.org/pkg/
 #### Typed
 
 | Dynamic Types | Static Types |
-| ------------- | ------------ |
+| :------------ | :----------- |
 | Javascript    | C++          |
 | Ruby          | Java         |
 | Python        | **Go**       |
 
-#### Basic Go Types
+#### Basic Go Typ
 
-| Types   | Example             |
-| ------- | ------------------- |
-| bool    | true false          |
-| string  | "hello world"       |
-| int     | 0 -10000 9999       |
-| float64 | 10.0001 0.9 -100.03 |
+##### Customer tpye declarationes
+
+| Types     | Example             |
+| :-------- | :------------------ |
+| `bool`    | true false          |
+| `string`  | "hello world"       |
+| `int`     | 0 -10000 9999       |
+| `float64` | 10.0001 0.9 -100.03 |
 
 #### Variable Declarations
 
@@ -99,7 +105,7 @@ true
 apple
 ```
 
-The **:=** syntax is shorthand for declaring and initializing a variable
+> The **:=** syntax is shorthand for declaring and initializing a variable
 
 #### Basic Functions
 
@@ -210,4 +216,33 @@ func main() {
 	}
 	fmt.Println(sum) // 6 (2+4)
 }
+```
+
+##### Customer type declaration
+
+`deck.go`
+
+```go
+type deck []string
+
+func (d deck) print() {
+	for i, item := range d {
+		fmt.Println(i, item)
+	}
+}
+```
+
+`main.go`
+
+```go
+func main() {
+	a := deck{"C", "Java", "JavaScript", "Go"}
+	a = append(a, "Dart")
+	a.print()
+}
+
+```
+
+```zsh
+go run main.go deck.go
 ```
