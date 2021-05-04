@@ -3,20 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello Go")
-	switchNumber(0)
-}
-
-func switchNumber(n int) {
-	switch n {
-	case 0:
-		fmt.Println("Zero")
-		break
-	case 1:
-		fmt.Println("One")
-		break
-	case 2:
-		fmt.Println("Two")
-		break
-	}
+	msg := "some message"
+	var msgPointer *string = &msg
+	fmt.Println(msg)
+	fmt.Println(msgPointer)
+	// return 0xc000050240
+	fmt.Println(*msgPointer)
+	// return "some message"
 }
