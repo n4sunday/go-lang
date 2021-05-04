@@ -306,6 +306,13 @@ func main() {
 	// return 0xc000050240
 	fmt.Println(*msgPointer)
 	// return "some message"
+
+	changeMessage(&msg)
+	fmt.Println(msg)
+}
+
+func changeMessage(msg *string) {
+	*msg = "new message"
 }
 ```
 
