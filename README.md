@@ -246,3 +246,54 @@ func main() {
 ```zsh
 go run main.go deck.go
 ```
+
+##### Condition
+```go
+if i%2 == 0 {
+	fmt.Printf("%d Even number\n", i)
+} else if i%2 != 0 {
+	fmt.Printf("%d Odd number\n", i)
+}
+```
+
+```go
+func main() {
+	fmt.Println("Hello Go")
+	a := "hello"
+	if b := check(a); b == "true" {
+		fmt.Println("TRUE")
+	} else {
+		fmt.Println("FALSE")
+	}
+}
+
+func check(v string) string {
+	if v == "hello" {
+		return "true"
+	} else {
+		return "false"
+	}
+}
+```
+`Switch Case`
+```go
+func main() {
+	switchNumber(0)
+}
+
+func switchNumber(n int) {
+	switch n {
+	case 0:
+		fmt.Println("Zero")
+		break
+	case 1:
+		fmt.Println("One")
+		break
+	case 2:
+		fmt.Println("Two")
+		break
+	}
+}
+```
+
+
